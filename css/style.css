@@ -1,0 +1,224 @@
+*{
+    animation-name: introAnimate;
+    animation-delay: 0s;
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+svg {
+    margin: 130px 20px 200px 470px;
+    align-self: center;
+    font-family: 'Playpen Sans', cursive;
+    height: auto;
+    max-width: 66vmin;
+    transform-origin: center;
+    width: 66%;
+    animation-name: rotate-circle;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#creator{
+    transition-property: opacity;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    text-decoration: none;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    text-align: center;
+    margin: 210px;
+}
+
+#creator >a{
+    color: black;
+    text-decoration: none;
+}
+
+#creator:hover{
+    opacity: 0;
+}
+
+#bliss{
+    text-decoration: none;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 210px;
+    animation-name: lefttoright;
+    animation-delay: 0s;
+    animation-direction: forwards;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+#bliss>a{
+    color: black;
+    text-decoration: none;
+}
+
+#blisstwo{
+    text-decoration: none;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 210px;
+    animation-name: lefttoright;
+    animation-delay: 0s;
+    animation-direction: forwards;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+    
+#blisstwo>a{
+    color: black;
+    text-decoration: none;
+}
+
+.out{
+    text-decoration: none;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0px;
+    animation-name: outt;
+    animation-delay:1s;
+    animation-direction: forwards;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.outtwo{
+    text-decoration: none;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0px;
+    animation-name: outt;
+    animation-delay:1s;
+    animation-direction: forwards;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+#days{
+    text-decoration: none;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin: 20px 100px 20px 100px;
+    animation-name: dayss;
+    animation-delay:0s;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+#days>a{
+    color: black;
+    text-decoration: none;
+}
+
+#daystwo{
+    text-decoration: none;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin: 20px 100px 20px 100px;
+    animation-name: dayss;
+    animation-delay:0s;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+#daystwo>a{
+    color: black;
+    text-decoration: none;
+}
+
+#contemplate{
+    transition-property: opacity;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    text-decoration: none;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    text-align: center;
+    margin: 210px;
+}
+
+#contemplate>a{
+    color: black;
+    text-decoration: none;
+}
+
+#contemplate:hover{
+    opacity: 0;
+}
+
+@keyframes introAnimate {
+    from{
+        background-color:#99ff8e
+    }
+    to{
+        background-color:#f6f048;
+    }
+}
+
+@keyframes rotate-circle{
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes lefttoright{
+    from{
+        margin-left: 0%;
+        opacity: 0;
+    }
+    to{
+        margin-right: 50%;
+    }
+}
+
+@keyframes outt{
+    from{
+        margin-left: 100%;
+        opacity: 0;
+        font-size: 0;
+        color: rgb(99, 248, 99);
+    }
+    to{
+        margin:0%;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform:rotate(360deg); 
+        -o-transfrom:rotate(360deg);
+    }
+}
+
+@keyframes dayss{
+    from{font-size: 200px;}
+    to{font-size: 100;}
+}
